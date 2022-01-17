@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="utf-8">
+<title><%= pageTitle %></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="" />
+<meta name="author" content="http://webthemez.com/" />
+<!-- css -->
+<link href="css/bootstrap.min.css" rel="stylesheet" />
+<link href="css/fancybox/jquery.fancybox.css" rel="stylesheet">
+<link href="css/jcarousel.html" rel="stylesheet" />
+<link href="css/flexslider.css" rel="stylesheet" />
+<link href="js/owl-carousel/owl.carousel.html" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/layers.css" rel="stylesheet" />
+<!-- <link href="css/bootstrap.css" rel="stylesheet" /> -->
+<link href="css/responsive.css" rel="stylesheet">
+<!-- Vendor Styles -->
+<link href="css/magnific-popup.css" rel="stylesheet"> 
+<!-- Block Styles -->
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/gallery-1.css" rel="stylesheet">
+
+<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+ 
+<!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+<!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+<div id="wrapper" class="home-page">
+<div class="topbar">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <p class="pull-left hidden-xs">Welcome</p>
+        <p class="pull-right"><i class="fa fa-phone"></i>Tel No. (+001) 123-456-789</p>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- start header -->
+	<header>
+        <div class="navbar navbar-default navbar-static-top">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="/"><img src="img/logo.png" alt="logo"/></a>
+                </div>
+                <div class="navbar-collapse collapse ">
+                    <ul class="nav navbar-nav">
+                        <li <% if (page_name === 'home') { %> class="active" <%} else { %> class="nav-item" <% } %> ><a href="/">Home</a></li>
+                        <li <% if (page_name === 'about') { %> class="active" <%} else { %> class="nav-item" <% } %> ><a href="/about">About</a></li>
+ 
+						 <!-- <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">About Us <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class=""><a href="about.html">Company</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">News</a></li> 
+                            <li><a href="#">Investors</a></li>
+                        </ul>
+                    </li>  -->
+						<li <% if (page_name === 'programs') { %> class="active" <%} else { %> class="nav-item" <% } %>><a href="/programs">Programs</a></li>
+                        <li <% if (page_name === 'media') { %> class="active" <%} else { %> class="nav-item" <% } %> ><a href="/media">Media</a></li>
+						<li <% if (page_name === 'blog') { %> class="active" <%} else { %> class="nav-item" <% } %> ><a href="https://medium.com\@mosesthonze">Blog</a></li>
+                        <li <% if (page_name === 'investment') { %> class="active" <%} else { %> class="nav-item" <% } %>><a href="/investment">Investment</a></li>
+                        <li <% if (page_name === 'contact') { %> class="active" <%} else { %> class="nav-item" <% } %>><a href="/contact">Contact Us</a></li>
+                        <li><a href="https://v1.nocodeapi.com/mobulus/medium/RqxiobchtlGBdLlv">Blog</a></li>
+
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account<span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/login"><i class="fa fa-user"></i>Login</a></li>
+                                <li role="separator" class="divider"></li>
+                                <li><a href="/signup">Create Account</a></li>
+                            </ul>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+	</header>
+	<!-- end header -->

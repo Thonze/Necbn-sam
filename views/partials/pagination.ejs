@@ -1,0 +1,23 @@
+<!-- <section class="pagination"> -->
+    
+    <% if (currentPage !== 1 && previousPage !== 1) { %>
+        <li class="page-item disabled" ><a href="#" class="page-link">Previous</a></li>
+    <% } %>
+    <% if (hasPreviousPage) { %>
+        <li class="page-item active"><a href="/admin/users/?page=1" class="page-link">1</a></li>
+    <% } %>
+    <a href="?page=<%= currentPage %>" class="active"><%= currentPage %></a>
+    <% if (hasNextPage) { %>
+        <li class="page-item active"><a href="/admin/users/?page=2" class="page-link">2</a></li>
+    <% } %>
+    <% if (lastPage !== currentPage && nextPage !== lastPage) { %>
+        <li class="page-item "><a href="/admin/users/?page=3" class="page-link">2</a></li>
+    <% } %>
+
+<!-- </section> -->
+
+<!-- <li class="page-item disabled"><a href="#" class="page-link">Previous</a></li>
+                <li class="page-item active"><a href="/admin/users/?page=1" class="page-link">1</a></li>
+                <li class="page-item"><a href="/admin/users/?page=2" class="page-link">2</a></li>
+                <li class="page-item"><a href="/admin/users/?page=3" class="page-link">3</a></li>
+                <li class="page-item"><a href="" class="page-link">Next</a></li> -->

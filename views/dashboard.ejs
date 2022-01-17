@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>nHub Portfolio</title>
+  <link rel="stylesheet" href="/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/css/bootstrap.css">
+  <link rel="stylesheet" href="css/csss/style.css">
+</head>
+
+<div class="menu" tabindex="1">
+  
+  <div class="list">
+    <span><a href="/">Home</a></span>
+    <span><box-icon name='user' ></box-icon>Profile</span>
+    <span><a href="/user/invest"><box-icon name='leaf'></box-icon>Invest</a></span>
+    <span><a href="/logout"><box-icon name='x-circle'></box-icon>Logout</a></span>
+  </div>
+  <div class="content">
+    <!-- Toggle Button -->
+    <div class="btn"></div>
+    <!-- <section class="padding ptb-xs-40"> -->
+		<div class="container">
+		<div class="row">	  
+		<div class="col-md-8">
+			<div class="card p-4">
+			  <div class="card-body">
+				<h3 class="text-center">Profile</h3>
+				<hr>
+				<div class="row">
+				  <div class="col-md-6">
+					<div class="form-group">
+						<h4>Full Names</h4>
+						<p><%= user.firstName %> <%=user.lastName %></p>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group">
+						<h4>Email</h4>
+						<p><%= user.email %></p>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group">
+						<h4>Country</h4>
+						<p><%= user.country %></p>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group">
+						<h4>Address</h4>
+						<p><%= user.address %></p>
+					</div>
+				  </div>
+				  <div class="col-md-6">
+					<div class="form-group">
+						<h4>Phone Number</h4>
+						<p><%= user.phoneNumber %></p>
+					</div>
+				  </div>
+				</div>
+				<div class="row">
+				  <div class="col-md-12">
+					<button class="bg-dark"><a href="/user/invest" class="button">Start an Investment</a></button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </div>
+		
+</div>
+<%- include ('./partials/footerlogin') %> 

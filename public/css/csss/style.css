@@ -1,0 +1,73 @@
+.menu{
+  width:40px;
+  height:40px;
+  display:block;
+  position:relative
+}
+
+.menu[tabindex]{outline:none}
+
+.list,.content{
+  height:100%;
+  top:0;
+  z-index:-1;
+  display:flex;
+  position:fixed;
+  align-items:center;
+  flex-flow:column wrap;
+  justify-content:center;
+  transition:all .75s ease
+}
+
+.list{
+  background:#26d07c;
+  width:20%;
+  left:-20%;
+  opacity:0
+}
+
+.list span{
+  background:#fff;
+  margin:10px 0;
+  padding:10px 16px;
+  border-radius:4px
+}
+
+.content{
+  background:#f5f5f1;
+  width:100%;
+  padding:0 16px;
+  left:0;
+  text-align:center
+}
+
+.btn{
+  background:#000;
+  width:40px;
+  height:40px;
+  top:10px;
+  left:10px;
+  display:block;
+  position:absolute;
+  border-radius:50%
+}
+
+.btn:before,
+.btn:after{
+  background:#fff;
+  content:"";
+  width:20px;
+  height:2px;
+  left:10px;
+  display:block;
+  position:absolute;
+  transition:all .75s ease
+}
+  
+.btn:before{top:16px}
+.btn:after{bottom:16px}
+
+.menu:focus-within .list{left:0;opacity:1}
+.menu:focus-within .content{width:80%;left:20%}
+.menu:focus-within .btn:before{transform:rotate(45deg) translate(2px,2px)}
+.menu:focus-within .btn:after{transform:rotate(-45deg) translate(2px,-2px)}
